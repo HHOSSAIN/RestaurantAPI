@@ -10,6 +10,8 @@ namespace RestaurantAPI.Models
         public long OrderDetailID { get; set; }
 
         public long OrderMasterID { get; set; }
+        //even when we comment out OrderMaster, OrderMasterId got created as foreign key in OrderDetails.
+        //we specified navigation property OrderDetail in form of list in OrderMaster file
         //public OrderMaster OrderMaster { get; set; } //navigation property
 
         public int FoodItemID { get; set; }
